@@ -8,11 +8,15 @@ public class GameNumber {
     }
 
     public String report() {
+        StringBuilder result = new StringBuilder();
         if (isDividableBy(3)) {
-            return "Fizz";
+            result.append("Fizz");
         }
         if (isDividableBy(5)) {
-            return "Buzz";
+            result.append("Buzz");
+        }
+        if (result.length() != 0) {
+            return result.toString();
         }
         if (isDividableBy(7)) {
             return "Whizz";

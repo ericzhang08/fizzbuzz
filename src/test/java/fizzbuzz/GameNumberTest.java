@@ -23,6 +23,13 @@ public class GameNumberTest {
         assertEquals("Buzz", gameNumber.report());
     }
 
+    @Test
+    public void should_return_Fizz_when_report_given_7_is_dividable_by_7() {
+        GameNumber gameNumber = new GameNumber(7);
+        assertEquals("Whizz", gameNumber.report());
+    }
+
+
 
 
 

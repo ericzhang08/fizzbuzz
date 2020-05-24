@@ -35,10 +35,17 @@ public class GameNumberTest {
         assertEquals("FizzBuzz", gameNumber.report());
     }
     @Test
-    public void should_return_FizzBuzz_when_report_given_21_is_dividable_by_3_and_7() {
+    public void should_return_FizzWhizz_when_report_given_21_is_dividable_by_3_and_7() {
         GameNumber gameNumber = new GameNumber(21);
         assertEquals("FizzWhizz", gameNumber.report());
     }
+
+    @Test
+    public void should_return_BuzzWhizz_when_report_given_35_is_dividable_by_5_and_7() {
+        GameNumber gameNumber = new GameNumber(35);
+        assertEquals("BuzzWhizz", gameNumber.report());
+    }
+
 
 
 

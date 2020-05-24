@@ -15,11 +15,12 @@ public class GameNumber {
         if (isDividableBy(5)) {
             result.append("Buzz");
         }
+
+        if (isDividableBy(7)) {
+            result.append("Whizz");
+        }
         if (result.length() != 0) {
             return result.toString();
-        }
-        if (isDividableBy(7)) {
-            return "Whizz";
         }
         return String.valueOf(number);
     }

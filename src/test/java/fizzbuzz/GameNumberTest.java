@@ -11,5 +11,12 @@ public class GameNumberTest {
         assertEquals("2", gameNumber.report());
     }
 
+    @Test
+    public void should_return_Fizz_when_report_given_3_is_dividable_by_3() {
+        GameNumber gameNumber = new GameNumber(3);
+        assertEquals("Fizz", gameNumber.report());
+    }
+
+
 
 }

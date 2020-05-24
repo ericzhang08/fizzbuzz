@@ -19,10 +19,7 @@ public class GameNumber {
         if (isDividableBy(7)) {
             result.append("Whizz");
         }
-        if (result.length() != 0) {
-            return result.toString();
-        }
-        return String.valueOf(number);
+        return result.length() != 0 ? result.toString() : String.valueOf(number);
     }
 
     private boolean isDividableBy(int i) {
